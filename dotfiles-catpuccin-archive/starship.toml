@@ -16,5 +16,5 @@ style = 'bold mauve'
 
 [character]
 
-format = '[>>  ](bold teal)'
+format = '[><>  ](bold teal)'
 

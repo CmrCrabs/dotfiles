@@ -25,26 +25,26 @@
          }
      },
     "clock": {
-	"format": "{:%H:%M} ",
-	"format-alt": "{:%A, %B %d, %Y} "
+	"format": "{:%H:%M} 󰥔",
+	"format-alt": "{:%A, %B %d, %Y} 󰺗 "
     },
     "battery": {
         "states": {
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}%",
+        "format": "{icon}  {capacity}%",
         "tooltip-format": "{timeTo}, {capacity}%",
-        "format-charging": " {capacity}%",
+        "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""]
     },
     "network": {
-        "format-wifi": "直",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr}  ",
-        "format-linked": "{ifname} (No IP)  ",
-        "format-disconnected": "睊",
+        "format-wifi": "󰤟",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} 󰈀",
+        "format-linked": "{ifname} (No IP) 󰤮",
+        "format-disconnected": "󰤮",
         "format-alt": "{ifname}",
         "tooltip-format": "{essid} {signalStrength}%"
     },

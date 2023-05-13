@@ -14,6 +14,10 @@ set -g fish_greeting
 
 # exports
 
+# export PATH=$PATH:$HOME/.config/.scripts
+export EDITOR="helix"
+export TERMINAL="alacritty"
+export BROWSER="firefox"
 
 
 # Abbreviations
@@ -28,3 +32,5 @@ abbr -a -g wft 'ping gnu.org -c 1'
 abbr -a -g ahx '&& helix .'
 abbr -a -g wpt 'curl https://www.cloudflare.com/cdn-cgi/trace/'
 abbr -a -g wpi 'sudo warp-svc'
+abbr -a -g wpx 'sudo pkill warp-svc'
+abbr -a -g wfpt 'curl https://www.cloudflare.com/cdn-cgi/trace/ && ping gnu.org -c 1'
