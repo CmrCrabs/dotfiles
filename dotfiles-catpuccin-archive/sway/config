@@ -20,8 +20,8 @@ output DP-3 resolution 1920x515 position 0,1080
 
 font pango:Jetbrains Mono Nerd Font 10
 
-gaps inner 30
-gaps outer 30
+gaps inner 40
+gaps outer 40
 
 output * bg ~/.config/.wallpapers/cat_ascii_wp.png fill
 
