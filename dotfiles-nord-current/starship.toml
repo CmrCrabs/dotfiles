@@ -1,0 +1,20 @@
+format="$directory$battery$character"
+
+palette='nord'
+
+[palettes.nord]
+
+base = "#3b4252"
+blue = '#5e81ac'
+green = "#8fbcbb"
+lavender = "#babbf1"
+
+[directory]
+truncate_to_repo = true
+style = 'bold green'
+
+
+[character]
+
+format = '[><>  ](bold blue)'
+
