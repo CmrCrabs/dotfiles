@@ -1,0 +1,10 @@
+{
+  "githubTipsHoverText": {
+    "message": "Ein Trinkgeld senden",
+    "description": "Hover text for tip button"
+  },
+  "githubTipsIconLabel": {
+    "message": "Trinkgeld",
+    "description": "Icon label for tip button"
+  }
+}

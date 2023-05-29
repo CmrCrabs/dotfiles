@@ -11,7 +11,10 @@ set $m_bot "DP3"
 bindsym $mod+Shift+s exec grim -g "$(slurp -d)" - | wl-copy
 
 # Init
-exec "Initialise.sh"
+exec "nitrogen --restore"
+exec picom
+exec ~/.config/.scripts/monitorSetup.sh
+exec ~/.config/.scripts/brightnessInit.sh
 
 # Autotiling
 
@@ -67,12 +70,12 @@ workspace $ws1 output $m_top
 workspace $ws2 output $m_top
 workspace $ws3 output $m_top
 workspace $ws4 output $m_top
-workspace $ws5 output $m_top
+workspace $ws5 output $m_bot
 workspace $ws6 output $m_bot
 workspace $ws7 output $m_bot
-workspace $ws8 output $m_bot
-workspace $ws9 output $monitor_bot
-workspace $ws10 output $monitor_bot
+workspace $ws8 output $m_top
+workspace $ws9 output $m_top
+workspace $ws10 output $m_top
 
 
 bindsym $mod+1 workspace number $ws1
@@ -118,3 +121,9 @@ bindsym $mod+i resize grow height 10px
 bindsym $mod+o resize shrink height 10px
 bindsym $mod+p resize grow width 10px
 
+# brightness control
+
+bindsym $mod+F4 exec "backlight_control -10"
+bindsym $mod+F5 exec "backlight_control +10"
+bindsym $mod+Shift+F4 exec "echo 10 > '/sys/class/leds/asus::screenpad/brightness'"
+bindsym $mod+Shift+F5 exec "echo 255 > '/sys/class/leds/asus::screenpad/brightness'"

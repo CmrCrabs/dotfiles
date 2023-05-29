@@ -1,0 +1,10 @@
+{
+  "githubTipsHoverText": {
+    "message": "Küldj egy borravalót",
+    "description": "Hover text for tip button"
+  },
+  "githubTipsIconLabel": {
+    "message": "Adomány",
+    "description": "Icon label for tip button"
+  }
+}

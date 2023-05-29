@@ -17,7 +17,7 @@ set -g fish_greeting
 # export PATH=$PATH:$HOME/.config/.scripts
 export EDITOR="helix"
 export TERMINAL="alacritty"
-export BROWSER="firefox"
+export BROWSER="brave"
 
 
 # Abbreviations
@@ -25,6 +25,7 @@ export BROWSER="firefox"
 abbr -a -g hx 'helix .'
 abbr -a -g cl 'clear'
 abbr -a -g cdl 'cd && clear'
+abbr -a -g cdln 'cd && clear && pfetch'
 abbr -a -g bat 'cat /sys/class/power_supply/BAT0/capacity'
 abbr -a -g rbt 'sudo reboot'
 abbr -a -g nm 'sudo nmtui'

@@ -1,0 +1,6 @@
+2023/05/29-13:42:36.946 ad0 Reusing MANIFEST /home/zayaan/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/05/29-13:42:36.946 ad0 Recovering log #21
+2023/05/29-13:42:36.948 ad0 Reusing old log /home/zayaan/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/000021.log 
+2023/05/29-14:12:58.676 a8d Level-0 table #25: started
+2023/05/29-14:12:58.682 a8d Level-0 table #25: 75822 bytes OK
+2023/05/29-14:12:58.684 a8d Delete type=0 #21
