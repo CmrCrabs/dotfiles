@@ -1,0 +1,10 @@
+{
+  "githubTipsHoverText": {
+    "message": "Poslat spropitné",
+    "description": "Hover text for tip button"
+  },
+  "githubTipsIconLabel": {
+    "message": "Příspěvek ",
+    "description": "Icon label for tip button"
+  }
+}
