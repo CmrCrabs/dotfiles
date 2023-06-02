@@ -1,10 +1,5 @@
-2023/05/29-12:24:49.008 562 Reusing MANIFEST /home/zayaan/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/05/29-12:24:49.008 562 Recovering log #24
-2023/05/29-12:24:49.019 562 Reusing old log /home/zayaan/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000024.log 
-2023/05/29-12:24:51.374 562 Level-0 table #30: started
-2023/05/29-12:24:51.383 562 Level-0 table #30: 941405 bytes OK
-2023/05/29-12:24:51.383 562 Delete type=0 #24
-2023/05/29-12:24:56.227 562 Compacting 1@1 + 1@2 files
-2023/05/29-12:24:56.230 562 Generated table #31@1: 373 keys, 44722 bytes
-2023/05/29-12:24:56.231 562 Compacted 1@1 + 1@2 files => 44722 bytes
-2023/05/29-12:24:56.232 562 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/05/29-20:37:31.297 583 Reusing MANIFEST /home/zayaan/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/05/29-20:37:31.297 583 Recovering log #29
+2023/05/29-20:37:31.301 583 Reusing old log /home/zayaan/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000029.log 
+2023/05/29-20:37:31.301 583 Delete type=2 #30
+2023/05/29-20:37:31.301 583 Delete type=2 #27

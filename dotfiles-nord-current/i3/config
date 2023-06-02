@@ -18,11 +18,16 @@ exec ~/.config/.scripts/brightnessInit.sh
 
 # Autotiling
 
+#TEMP
+
+# Gaps
+
+gaps inner 50
+gaps outer 50
+
 
 # misc
 font pango:Jetbrains Mono Nerd Font 10
-gaps inner 20
-gaps outer 20
 # for_window [class=".*"] border pixel 1
 default_border pixel 2
 client.focused "#4c566a" "#4c566a" "#4c566a"
@@ -110,7 +115,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
     bindsym $mod+f fullscreen
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+Shift+f floating toggle
     bindsym $mod+space focus mode_toggle
     bindsym $mod+a focus parent
 

@@ -1,0 +1,10 @@
+{
+  "githubTipsHoverText": {
+    "message": "Saada preemia",
+    "description": "Hover text for tip button"
+  },
+  "githubTipsIconLabel": {
+    "message": "Preemia",
+    "description": "Icon label for tip button"
+  }
+}

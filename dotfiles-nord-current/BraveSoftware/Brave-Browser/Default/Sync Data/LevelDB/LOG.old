@@ -1,3 +1,24 @@
-2023/05/29-13:24:31.145 755 Reusing MANIFEST /home/zayaan/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
-2023/05/29-13:24:31.145 755 Recovering log #21
-2023/05/29-13:24:31.147 755 Reusing old log /home/zayaan/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/000021.log 
+2023/05/30-21:40:34.082 573 Reusing MANIFEST /home/zayaan/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/05/30-21:40:34.082 573 Recovering log #55
+2023/05/30-21:40:34.084 573 Reusing old log /home/zayaan/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/000055.log 
+2023/05/31-11:04:31.193 541 Level-0 table #60: started
+2023/05/31-11:04:31.200 541 Level-0 table #60: 69972 bytes OK
+2023/05/31-11:04:31.202 541 Delete type=0 #55
+2023/05/31-11:51:06.466 52e Level-0 table #62: started
+2023/05/31-11:51:06.474 52e Level-0 table #62: 72703 bytes OK
+2023/05/31-11:51:06.475 52e Delete type=0 #59
+2023/05/31-12:35:46.714 530 Level-0 table #64: started
+2023/05/31-12:35:46.721 530 Level-0 table #64: 76077 bytes OK
+2023/05/31-12:35:46.723 530 Delete type=0 #61
+2023/05/31-13:21:24.734 530 Level-0 table #66: started
+2023/05/31-13:21:24.742 530 Level-0 table #66: 73083 bytes OK
+2023/05/31-13:21:24.743 530 Delete type=0 #63
+2023/05/31-13:21:24.743 530 Compacting 4@0 + 1@1 files
+2023/05/31-13:21:24.746 530 Generated table #67@0: 50 keys, 10346 bytes
+2023/05/31-13:21:24.746 530 Compacted 4@0 + 1@1 files => 10346 bytes
+2023/05/31-13:21:24.747 530 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/05/31-13:21:24.747 530 Delete type=2 #57
+2023/05/31-13:21:24.747 530 Delete type=2 #62
+2023/05/31-13:21:24.747 530 Delete type=2 #60
+2023/05/31-13:21:24.747 530 Delete type=2 #64
+2023/05/31-13:21:24.747 530 Delete type=2 #66
