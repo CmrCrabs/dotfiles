@@ -16,5 +16,5 @@ style = 'bold green'
 
 [character]
 
-format = '[><>  ](bold blue)'
+format = '[  ](bold blue)'
 

@@ -22,10 +22,14 @@ export BROWSER="brave"
 
 # Abbreviations
 
+abbr -a -g ls 'lsd'
+
 abbr -a -g hx 'helix .'
 abbr -a -g cl 'clear'
+abbr -a -g cls 'clear && ls'
 abbr -a -g cdl 'cd && clear'
 abbr -a -g cdln 'cd && clear && pfetch'
+abbr -a -g cdls 'cd && ls'
 abbr -a -g bat 'cat /sys/class/power_supply/BAT0/capacity'
 abbr -a -g rbt 'sudo reboot'
 abbr -a -g nm 'sudo nmtui'

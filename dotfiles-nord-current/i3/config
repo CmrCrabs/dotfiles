@@ -8,11 +8,11 @@ set $term alacritty
 set $menu rofi -show drun
 set $m_top "eDP1"
 set $m_bot "DP3"
-bindsym $mod+Shift+s exec grim -g "$(slurp -d)" - | wl-copy
 
 # Init
 exec "nitrogen --restore"
 exec picom
+exec  ~/.config/.scripts/audio.sh
 exec ~/.config/.scripts/monitorSetup.sh
 exec ~/.config/.scripts/brightnessInit.sh
 
@@ -36,23 +36,26 @@ exec "setxkbmap -layout gb"
 
 ### Key bindings
 
-    bindsym $mod+q exec $term
-    bindsym $mod+c kill
-    bindsym $mod+d exec $menu
 
-    # floating_modifier $mod normal
-    bindsym $mod+Shift+c reload
-    bindsym $mod+Shift+e exec i3-nagbar -t warning -m 'Exit?' -B 'Yes, exit i3' 'i3msg exit'
+bindsym $mod+q exec $term
+bindsym $mod+c kill
+bindsym $mod+d exec $menu
 
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
+floating_modifier $mod
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+e exec i3-nagbar -t warning -m 'Exit?' -B 'Yes, exit i3' 'i3msg exit'
 
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+# Controls
+
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
 
 # Workspaces:
 
@@ -69,7 +72,6 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
-
 
 workspace $ws1 output $m_top
 workspace $ws2 output $m_top
@@ -108,7 +110,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 
 
-# Layout stuff:
+# Layout
     bindsym $mod+b splith
     bindsym $mod+v splitv
     bindsym $mod+s layout stacking
@@ -132,3 +134,14 @@ bindsym $mod+F4 exec "backlight_control -10"
 bindsym $mod+F5 exec "backlight_control +10"
 bindsym $mod+Shift+F4 exec "echo 10 > '/sys/class/leds/asus::screenpad/brightness'"
 bindsym $mod+Shift+F5 exec "echo 255 > '/sys/class/leds/asus::screenpad/brightness'"
+
+# Audio control
+
+bindsym $mod+F2 exec "pamixer -d 5"
+bindsym $mod+F3 exec "pamixer -i 5"
+bindsym $mod+F1 exec "pamixer -t"
+
+# Screenshots
+
+bindsym $mod+Shift+s exec "maim -s -o | xclip -selection clipboard -t image/png -i"
+
