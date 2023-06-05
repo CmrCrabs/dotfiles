@@ -1,0 +1,77 @@
+$surface-darkgrey: #20252b;
+$surface-fg: #949494;
+$surface-lightgrey: #3d464e;
+$surface-grey: #2b3238;
+$surface-red: #f87070;
+
+* { all: unset; }
+
+/* Layout */
+.layout-box {
+  font-family: Sans Serif;
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  padding: 3em;
+  color: rgb($surface-fg);
+}
+
+.sundial-layout {
+}
+
+.net-box,
+.bat-box,
+.tm-box {
+  label {
+    font-size: 2em;
+  }
+}
+
+.close-btn {
+  font-size: 2em;
+  &:hover {
+    color: $surface-red;
+  }
+}
+
+.btns-box {
+  font-size: 2.5em;
+
+  button {
+    padding: 0.4em;
+    border-radius: 0.1em;
+    background-color: rgb($surface-darkgrey);
+
+    &:hover {
+      transition: 200ms linear background-color, border-radius;
+      background-color: rgb($surface-lightgrey);
+    }
+
+    &:first-child {
+      color: rgb($surface-red);
+    }
+  }
+}
+
+.sep {
+  font-size: 1em;
+  padding-top: 0.15em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-family: Iosevka;
+  font-weight: 400;
+}
+
+
+/* Sundial */
+
+.sundial-lbl {
+  font-size: 1.5em;
+  font-weight: Bold;
+  border-radius: 0.2em;
+  padding: 0.4em;
+  padding-bottom: 0.5em;
+  font-family: Jetbrains Mono;
+}
+
+
+// vim:ft=scss

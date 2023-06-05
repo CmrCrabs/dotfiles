@@ -1,0 +1,52 @@
+(defwindow bottom_bar
+  :stacking "fg"
+  :windowtype "dock"
+  :wm-ignore true
+  :geometry (geometry :width "96%" 
+                      :height "5%"
+                      :x "0%"
+                      :y "-2%"
+                      :anchor "bottom right"
+                      
+            )
+  (bottom_layout)
+)
+
+(defwidget bottom_layout []
+  (box :class "layout-box" 
+       :space-evenly false 
+       :orientation "vertical"
+    (box :space-evenly false :hexpand true :vexpand true
+      (box :spacing 15 :class "tm-box" :space-evenly false
+            :valign "end" :halign "start"
+        (label :text "" :class "time-layout")
+        (label :text "${time.hour}  ${time.min}")
+      )
+      (_buttons :shutdown "shutdown now" 
+                :reboot "reboot"
+                :logout "pkill i3"
+                :lock ""
+                :shutdown_icon "󰤆" 
+                :reboot_icon "󰜉"
+                :logout_icon "󰗽"
+                :lock_icon ""
+      )
+    )
+  )
+)
+
+(defwidget _buttons [shutdown shutdown_icon reboot
+                    reboot_icon logout logout_icon lock lock_icon]
+  (box :class "btns-box" 
+       :spacing 5
+       :vexpand true 
+       :hexpand true
+       :valign "end" 
+       :halign "end"
+       :space-evenly true
+    (button :onclick shutdown shutdown_icon)
+    (button :onclick reboot reboot_icon)
+    (button :onclick logout logout_icon)
+    (button :onclick lock lock_icon)
+  )
+)
