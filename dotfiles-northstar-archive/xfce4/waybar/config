@@ -1,0 +1,65 @@
+{
+    "layer": "top",
+    "position": "top",
+    // "width": 1900,
+    "height":"20",
+    "modules-left": ["clock", "tray"],
+    "modules-center": ["wlr/workspaces"],
+    "modules-right": ["battery", "custom-sep", "pulseaudio", "custom-sep", "network"],
+     "wlr/workspaces": {
+         "format": "{icon}",
+         "format-icons": {
+             "default": "",
+         },
+         "on-scroll-up": "hyprctl dispatch workspace e+1",
+         "on-scroll-down": "hyprctl dispatch workspace e-1",
+         "on-click": "activate",
+     },
+  },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}",
+        "timezone":"Europe/London"
+        //"format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "battery": {
+        "states": {
+            "good": 80,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "{} {capacity}%",
+        "format-good": " {capacity}%",
+        "format-icon": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "custom-sep": {
+    	"format": ""
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": " ",
+        "format-ethernet": " {ipaddr}/{cidr}",
+        "format-disconnected": "睊 ",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+	"tooltip": false,
+    },
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{icon} {volume}",
+        "format-bluetooth": "{icon} {volume}",
+        "format-bluetooth-muted": " ",
+        "format-muted": " ",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+},

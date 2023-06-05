@@ -1,0 +1,5 @@
+[Default Applications]
+image/jpeg=firefox.desktop
+
+[Added Associations]
+image/jpeg=firefox.desktop;
