@@ -15,4 +15,10 @@
 #### Nord
 ![Nord Example Picture](./assets/Nord_Rice.png)
 
-TODO: add all preview images
+#### Northstar
+![Northstar Example Picture](./assets/Northstar_Rice.png)
+
+#### Catpuccin
+![Catpuccin Example Picture](./assets/Catpuccin_Rice.png)
+
+

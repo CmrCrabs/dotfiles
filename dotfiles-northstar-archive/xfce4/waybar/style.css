@@ -1,0 +1,133 @@
+@import "mocha.css";
+
+* {
+    font-family: JetBrainsMono Nerd Font;
+}
+
+#clock,
+#battery,
+#pulseaudio,
+#tray,
+#workspaces,
+#network,
+#custom-sep {
+    background: @bg;
+    color: @accent-pink;
+    border-radius: 10px;
+    border: 4px solid @accent-pink;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+#battery {
+    border-radius: 10px 0 0 10px;
+    border-right: 0;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+#pulseaudio,
+#custom-sep {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#network {
+    margin-right: 15px;
+    padding-right: 10px;
+    border-radius: 0 10px 10px 0;
+    border-left: 0;
+    color: @accent-purp;
+}
+
+#custom-sep {
+    font-size: 15px;
+    color: @red;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#workspaces {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#workspaces button {
+    border: 0;
+    color: @base;
+    font-weight: bolder;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active{
+    color: @accent-purp;
+}
+
+#workspaces button:hover {
+    box-shadow: #323848 0 0 0 0px;
+    background: #323848;
+    text-shadow: #323848 0 0 0px;
+}
+
+#clock label{
+    color: @base;
+    font-weight:  bolder;
+    font-size: 20px;
+}
+
+#clock {
+    margin-left: 15px;
+    font-size: 15px;
+    padding-top: 0px;
+    padding-right: 21px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+#battery.charging {
+    color: #ECE0A8;
+}
+
+#battery {
+    color: #498d43;
+    font-weight: bolder;
+}
+
+#battery.warning:not(.charging) {
+    color: @red;
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+}
+
+#cpu {
+    font-weight: bolder;
+    color:#DFA7E7;
+}
+
+#backlight {
+    color: #A8E5E6;
+}
+
+#pulseaudio {
+    color: #7ab0df;
+    font-weight: bold;
+}
+
+#pulseaudio.muted {
+    color: #E97193;
+}
+
+#tray {
+    padding-left: 100px;
+    padding-right: 10px;
+    margin-left: 25px;
+}
+

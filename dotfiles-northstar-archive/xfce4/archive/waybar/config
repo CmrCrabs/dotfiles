@@ -1,0 +1,97 @@
+{
+    "layer": "top",
+    "position": "top",
+    // "width"': 1280, // Waybar width
+    "modules-left": ["clock", "custom/playerctl", "tray"],
+    "modules-center": ["wlr/workspaces"],
+    "modules-right": ["battery", "custom/sep", "pulseaudio", "custom/sep", "cpu", "custom/sep", "hyprland/language","backlight", "network"],
+     "wlr/workspaces": {
+         "format": "{icon}",
+         "format-icons": {
+             "default": "",
+         },
+         "on-scroll-up": "hyprctl dispatch workspace e+1",
+         "on-scroll-down": "hyprctl dispatch workspace e-1",
+         "on-click": "activate",
+     },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "🇺🇸",
+        "format-ru": "🇷🇺",
+    },
+   //  "bluetooth": {
+   //   "on-click": "blueman-manager"      
+   // },
+     "custom/playerctl": {
+    "format": "{icon}  <span>{}</span>",
+    "return-type": "json",
+    "max-length": 35,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} ~ {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click-middle": "playerctl play-pause",
+    "on-click": "playerctl previous",
+    "on-click-right": "playerctl next",
+    "format-icons": {
+      "Playing": "<span foreground='#94e2d5'></span>",
+      "Paused": "<span foreground='#f38ba8'></span>"
+    }
+  },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+    "backlight": {
+        "on-scroll-up": "light -A 12",
+        "on-scroll-down": "light -U 12",
+        "format": "{icon}",
+        "format-icons": [" ", " ", " ", " "]
+    },
+    "battery": {
+        "states": {
+            // "good": 80,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}",
+        "format-charging": " {capacity}",
+        // "format-good": " {capacity}", // An empty format will hide the module
+        "format-full": "🚨",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "custom/sep": {
+    	"format": "",
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": " ",
+        "format-ethernet": " {ipaddr}/{cidr}",
+        "format-disconnected": "睊 ",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+	"tooltip": false,
+    },
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{icon} {volume}",
+        "format-bluetooth": "{icon} {volume}",
+        "format-bluetooth-muted": " ",
+        "format-muted": " ",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+},
