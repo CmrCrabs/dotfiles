@@ -1,6 +1,0 @@
-2023-04-27 12:59:32.983 [info] update#ctor - updates are disabled as there is no update URL
-2023-04-27 12:59:33.710 [info] Starting extension host with pid 2207 (fork() took 7 ms).
-2023-04-27 12:59:40.955 [info] Extension host with pid 2207 exited with code: 0, signal: null.
-2023-04-27 12:59:41.295 [info] Starting extension host with pid 2310 (fork() took 6 ms).
-2023-04-27 13:01:46.386 [info] Waiting for extension host with pid 2310 to exit.
-2023-04-27 13:01:46.392 [info] Extension host with pid 2310 exited with code: 0, signal: null.
