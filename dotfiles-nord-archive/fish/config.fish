@@ -1,5 +1,6 @@
 if status is-interactive
-    starship init fish | source &    
+    starship init fish | source &
+    pfetch    
 end
 
 # colours
@@ -17,13 +18,16 @@ set -g fish_greeting
 # export PATH=$PATH:$HOME/.config/.scripts
 export EDITOR="helix"
 export TERMINAL="alacritty"
-export BROWSER="brave"
+export BROWSER="firefox"
 
 
 # Abbreviations
 
+abbr -a -g nv 'nvim'
 abbr -a -g ls 'lsd'
-
+abbr -a -g lsl 'lsd -l'
+abbr -a -g lsla 'lsd -la'
+abbr -a -g rgr 'ranger'
 abbr -a -g hx 'helix .'
 abbr -a -g cl 'clear'
 abbr -a -g cls 'clear && ls'
@@ -38,4 +42,5 @@ abbr -a -g ahx '&& helix .'
 abbr -a -g wpt 'curl https://www.cloudflare.com/cdn-cgi/trace/'
 abbr -a -g wpi 'sudo warp-svc'
 abbr -a -g wpx 'sudo pkill warp-svc'
+abbr -a -g .wp '~/.config/.wallpapers/'
 abbr -a -g wfpt 'curl https://www.cloudflare.com/cdn-cgi/trace/ && ping gnu.org -c 1'

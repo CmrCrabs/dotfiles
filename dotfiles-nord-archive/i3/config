@@ -12,9 +12,10 @@ set $m_bot "DP3"
 # Init
 exec "nitrogen --restore"
 exec picom
-exec  ~/.config/.scripts/audio.sh
-exec ~/.config/.scripts/monitorSetup.sh
-exec ~/.config/.scripts/brightnessInit.sh
+exec "~/.config/.scripts/monitorSetup.sh"
+exec "~/.config/.scripts/brightnessInit.sh"
+exec "~/.config/.scripts/audio.sh"
+exec polybar
 
 # Autotiling
 
@@ -22,14 +23,14 @@ exec ~/.config/.scripts/brightnessInit.sh
 
 # Gaps
 
-gaps inner 50
-gaps outer 50
+gaps inner 10
+gaps outer 10
 
 
 # misc
 font pango:Jetbrains Mono Nerd Font 10
 # for_window [class=".*"] border pixel 1
-default_border pixel 2
+default_border pixel 0
 client.focused "#4c566a" "#4c566a" "#4c566a"
 smart_borders on
 exec "setxkbmap -layout gb"
@@ -77,12 +78,12 @@ workspace $ws1 output $m_top
 workspace $ws2 output $m_top
 workspace $ws3 output $m_top
 workspace $ws4 output $m_top
-workspace $ws5 output $m_bot
-workspace $ws6 output $m_bot
+workspace $ws5 output $m_top
+workspace $ws6 output $m_top
 workspace $ws7 output $m_bot
-workspace $ws8 output $m_top
-workspace $ws9 output $m_top
-workspace $ws10 output $m_top
+workspace $ws8 output $m_bot
+workspace $ws9 output $m_bot
+workspace $ws10 output $m_bot
 
 
 bindsym $mod+1 workspace number $ws1
