@@ -1,0 +1,4 @@
+(include "./bottom_bar/eww.yuck")
+(include "./top_bar/eww.yuck")
+(include "./side_bar/eww.yuck")
+(include "./side_lower_bar/eww.yuck")

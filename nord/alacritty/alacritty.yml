@@ -1,0 +1,32 @@
+window:
+    opacity : 0.9
+    dimensions:
+      columns: 100
+      lines: 100
+    padding:
+      x: 10
+      y: 10
+    dynamic_padding: true
+    dynamic_title: true
+
+shell:
+  program : /bin/fish
+
+font:
+  normal:
+    family: Jetbrains Mono Nerd Font
+    style: Regular
+  size: 7.0
+
+dynamic_title: true
+
+cursor:
+  style:
+    shape: Beam
+    blinking: On
+    blink_interval: 750
+    blink_timeout: 5
+    thickness: 0.15
+
+import:
+ - ~/.config/alacritty/colors.yml

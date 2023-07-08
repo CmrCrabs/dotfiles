@@ -1,16 +1,20 @@
 # Dotfiles
 
 ### Info
-- Archive of all my dotfiles
-- configured for my laptop so will probably not work for most
+- archive of my Dotfiles
+- configured for my system
 
 ### Rices
 
-- catpuccin: wayland (sway)
-- northstar: wayland (Hyprland)
-- nord: x11 (i3)
+- paradise: awesomewm
+- catpuccin: sway
+- northstar: hyprland
+- nord: i3
 
 ### Images
+
+#### Paradise
+![Paradise Example Picture](.assets/paradise.png)
 
 #### Nord
 ![Nord Example Picture](./assets/Nord_Rice.png)
@@ -21,4 +25,6 @@
 #### Catpuccin
 ![Catpuccin Example Picture](./assets/Catpuccin_Rice.png)
 
+### Credits
 
+Paradise dotfiles are initially based on https://github.com/Stardust-kyun/dotfiles

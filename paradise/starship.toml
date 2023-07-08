@@ -1,0 +1,19 @@
+format="$directory$battery$character"
+
+palette='paradise'
+
+[palettes.paradise]
+
+base = "#303446"
+red = '#b86467'
+green = "#8d987e"
+blue = "#8ea5ba"
+
+[directory]
+truncate_to_repo = true
+style = 'bold green'
+
+
+[character]
+
+format = '[󱁕   ](bold blue)'

@@ -1,0 +1,13 @@
+(defwindow side_bar
+  :stacking "fg"
+  :windowtype "dock"
+  :wm-ignore true
+  :geometry (geometry :width "4%" 
+                      :height "100%"
+                      :x "0%"
+                      :y "0%"
+                      :anchor "top left"
+                      
+            )
+  "temp"
+)

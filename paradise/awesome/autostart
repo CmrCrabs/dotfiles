@@ -1,0 +1,12 @@
+#!/bin/sh
+
+run() {
+	if ! pgrep -f "$1" ; then
+		"$@"&
+	fi
+}
+
+run ~/.config/.scripts/InitCollection.sh
+run picom
+run nm-applet
+run feh --bg-scale ~/.config/wallpapers/upper2.png ~/.config/wallpapers/lower3.png
