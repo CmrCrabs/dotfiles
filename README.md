@@ -14,7 +14,7 @@
 ### Images
 
 #### Paradise
-![Paradise Example Picture](.assets/paradise.png)
+![Paradise Example Picture](./assets/paradise.png)
 
 #### Nord
 ![Nord Example Picture](./assets/Nord_Rice.png)
