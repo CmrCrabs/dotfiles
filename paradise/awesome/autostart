@@ -6,7 +6,7 @@ run() {
 	fi
 }
 
-run ~/.config/.scripts/InitCollection.sh
+# run ~/.config/.scripts/InitCollection.sh
 run picom
 run nm-applet
-run feh --bg-scale ~/.config/wallpapers/upper2.png ~/.config/wallpapers/lower3.png
+# run feh --bg-scale ~/.config/wallpapers/upper2.png ~/.config/wallpapers/lower3.png

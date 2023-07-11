@@ -1,0 +1,9 @@
+return {
+-- Table: {1}
+{
+   ["discord"]="#282b30",
+   ["pavucontrol"]="#e1dedb",
+   ["Navigator"]="#000000",
+   ["Alacritty"]="#0d0d0de6",
+},
+}
