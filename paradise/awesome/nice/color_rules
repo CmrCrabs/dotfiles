@@ -1,9 +1,16 @@
 return {
 -- Table: {1}
 {
-   ["discord"]="#282b30",
-   ["pavucontrol"]="#e1dedb",
+   ["feh"]="#4a606b",
+   ["pavucontrol"]="#101010",
+   ["firefox"]="#353535",
+   ["nemo"]="#151515",
    ["Navigator"]="#000000",
-   ["Alacritty"]="#0d0d0de6",
+   ["discord"]="#282b30",
+   ["Alacritty"]="#151515ff",
+   ["file_properties"]="#f6f5f4",
+   ["lxappearance"]="#dcdad5",
+   ["arandr"]="#101010",
+   ["qpwgraph"]="#efefef",
 },
 }

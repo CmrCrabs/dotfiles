@@ -88,8 +88,22 @@ awful.keyboard.append_global_keybindings({
 		end,
         { description = "start picom", group = "programs" }
 	),
+	awful.key(
+		{ modkey, "Shift" }, "e", function() 
+			awful.spawn.with_shell("nemo") 
+		end,
+        { description = "open file browser", group = "programs" }
+	),
 
-	-- Screenshot
+	awful.key(
+		{ modkey, "Shift" }, "f", function() 
+			awful.spawn.with_shell("firefox") 
+		end,
+        { description = "open web browser", group = "programs" }
+	),
+
+
+  -- Screenshot
 
 	awful.key(
 		{ modkey, "Shift" }, "s", function() 

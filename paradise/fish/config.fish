@@ -19,10 +19,11 @@ set -g fish_greeting
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
-
+export GTK_THEME="paradise"
 
 # Abbreviations
 
+abbr -a -g clcr 'clear && cargo run'
 abbr -a -g screensh 'maim -s -o | xclip -selection clipboard -t image/png -i'
 abbr -a -g nv 'nvim'
 abbr -a -g ls 'lsd'
