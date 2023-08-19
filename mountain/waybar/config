@@ -1,0 +1,21 @@
+[
+   {
+    "name": "bottom",
+    "layer": "top",
+    "position": "bottom",
+    "modules-left": [],
+    "modules-center": ["wlr/taskbar", "custom/start"],
+    "modules-right": [],
+    "height": 50,
+    "wlr/taskbar": {
+      "format": "{icon}",
+      "icon-size": 40,
+      "tooltip-format": "{title}",
+      "on-click": "activate",
+      "on-click-middle": "close",
+      "all-outputs": false,
+      "icon-theme": "Papirus",
+    },
+
+  }
+]
