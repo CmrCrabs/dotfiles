@@ -16,11 +16,13 @@ set -g fish_greeting
 
 # exports
 
-# export PATH=$PATH:$HOME/.cargo/bin
+# export PATH=$PATH:$HOME/.dotnet/tools
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
 export GTK_THEME="paradise"
+
+
 
 # Abbreviations
 

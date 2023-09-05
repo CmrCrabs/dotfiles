@@ -1,6 +1,7 @@
 format = """
 [░▒▓](#262626)\
-[  ](bg:#363636 fg:#e7e7e7)\
+[ 󱥒  ](bg:#363636 fg:#e7e7e7)\
+$battery\
 [](bg:#e7e7e7 fg:#363636)\
 $directory\
 [](fg:#e7e7e7 bg:#828aac)\
@@ -16,20 +17,29 @@ $time\
 [ ](fg:#262626)\
 \n$character"""
 
+add_newline = false
+# TODO: add right prompt (shift clock + battery to right prompt)
+
 [character]
-format = '[  >> ](bold #e7e7e7)'
+format = '[󱥒  >> ](bold #e7e7e7)'
+
+[battery]
+format = '[$symbol $percentage ](fg:#e7e7e7 bg:#363636)'
+full_symbol = ' '
+charging_symbol = ''
+discharging_symbol = ' '
+
+[[battery.display]]
+threshold = 100
 
 [directory]
 style = "fg:#262626 bg:#e7e7e7"
 format = "[ $path ]($style)"
 truncation_length = 3
-truncation_symbol = "…/"
+truncation_symbol = "… /"
 
 [directory.substitutions]
-"Documents" = "󰈙 "
 "Downloads" = " "
-"Music" = " "
-"Pictures" = " "
 ".config" = " "
 
 [git_branch]
