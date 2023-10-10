@@ -3,6 +3,7 @@
 #### Info
 - An archive of all of my various dotfiles
 - Configured for my system, chances are stuff will break
+- in reverse chronological order
 
 #### Mountain -  Hyprland
 ![Mountain Example Picture](./assets/mountain.png)
@@ -13,11 +14,12 @@
 #### Nord - i3wm
 ![Nord Example Picture](./assets/Nord_Rice.png)
 
+#### Catpuccin - SwayWM
+![Catpuccin Example Picture](./assets/Catpuccin_Rice.png)
+
 #### Northstar - Hyprland
 ![Northstar Example Picture](./assets/Northstar_Rice.png)
 
-#### Catpuccin - SwayWM
-![Catpuccin Example Picture](./assets/Catpuccin_Rice.png)
 
 ### Credits
 
