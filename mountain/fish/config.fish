@@ -26,6 +26,7 @@ export GTK_THEME="paradise"
 
 # Abbreviations
 
+abbr -a -g mpvr 'pkill mpvpaper && ~/.config/.scripts/mpvInit.sh'
 abbr -a -g mainframe_hardline.exe 'hollywood'
 abbr -a -g clcr 'clear && cargo run'
 abbr -a -g screensh 'maim -s -o | xclip -selection clipboard -t image/png -i'
@@ -35,7 +36,7 @@ abbr -a -g lsl 'lsd -l'
 abbr -a -g lsla 'lsd -la'
 abbr -a -g spac 'sudo pacman'
 abbr -a -g rgr 'ranger'
-abbr -a -g hx 'echo use nvim monkey'
+abbr -a -g hx 'helix .'
 abbr -a -g cl 'clear'
 abbr -a -g cls 'clear && ls'
 abbr -a -g cdl 'cd && clear'
