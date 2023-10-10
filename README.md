@@ -1,30 +1,22 @@
 # Dotfiles
 
-### Info
+#### Info
 - An archive of all of my various dotfiles
 - Configured for my system, chances are stuff will break
 
-### Rices
-
-
-#### Mountain
-##### Hyprland
+#### Mountain -  Hyprland
 ![Mountain Example Picture](./assets/mountain.png)
 
-#### Paradise
-##### AwesomeWM
+#### Paradise - AwesomeWM
 ![Paradise Example Picture](./assets/paradise.png)
 
-#### Nord
-##### i3wm
+#### Nord - i3wm
 ![Nord Example Picture](./assets/Nord_Rice.png)
 
-#### Northstar
-##### Hyprland
+#### Northstar - Hyprland
 ![Northstar Example Picture](./assets/Northstar_Rice.png)
 
-#### Catpuccin
-##### SwayWM
+#### Catpuccin - SwayWM
 ![Catpuccin Example Picture](./assets/Catpuccin_Rice.png)
 
 ### Credits
