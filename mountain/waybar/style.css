@@ -1,11 +1,10 @@
-
 window {
-    background: rgba(255, 255, 255, 0);
-    color: #FFFFFF;
+    background: rgba(240, 240, 240, 0);
+    color: #f0f0f0;
 }
 
 tooltip {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(240, 240, 240, 0);
 }
 
 tooltip label {
@@ -15,7 +14,7 @@ tooltip label {
 #taskbar {
   background: rgba(0,0,0,0);
   border-radius: 1em;
-  padding: 10px;
+  padding: 0px;
   margin: 0.5em;
 }
 
@@ -27,4 +26,44 @@ tooltip label {
 #taskbar button:hover{
     background: rgba(255, 255, 255, 0.2);
     border-radius: 1em;
+}
+
+/* rest of bs */
+
+* {
+  font-family: Iosevka Nerd Font;
+  color: black;
+  font-size: 16px;
+}
+
+window#top {
+  background: #f0f0f0;
+
+}
+
+#workspaces button {
+  padding: 0 7px;
+}
+
+#workspaces button * {
+  font-size: 20px;
+}
+
+#workspaces button.focused {
+  background-color: rgba(240, 240, 240, 0.15);
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0 16px;
+}
+
+#battery {
+  padding: 0 9px;
+  font-size: 20px;
+}
+
+#clock {
+  font-size: 20px;
+  padding-right: 9px;
 }
