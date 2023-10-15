@@ -4,7 +4,7 @@ window {
 }
 
 tooltip {
-    background: rgba(240, 240, 240, 0);
+    background: rgba(255, 255, 255, 0);
 }
 
 tooltip label {
@@ -36,9 +36,12 @@ tooltip label {
   font-size: 16px;
 }
 
-window#top {
+window#waybar {
   background: #f0f0f0;
+}
 
+window#waybar.bottombar {
+  background: rgba(0,0,0,0);
 }
 
 #workspaces button {
