@@ -1,6 +1,4 @@
-theme = "nord_nobg"
-
-
+theme = "base16_transparent"
 
 [editor.file-picker]
 hidden = false
@@ -13,12 +11,4 @@ select = "underline"
 [editor]
 auto-save = true
 auto-completion = true
-
-[editor.statusline]
-left = ["mode" , "spinner", "position"]
-right = ["diagnostics" , "selections" , "total-line-numbers" , "file-name"]
-separator = "|"
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
-
+line-number = "relative"

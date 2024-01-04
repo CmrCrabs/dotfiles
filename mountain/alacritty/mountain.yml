@@ -14,7 +14,7 @@ colors:
     white:   '0xe7e7e7'
     orange:  '0xc6a679' #Here for reference
 
-  bright:
+  dark:
     black:   '0x4c4c4c'
     red:     '0xc49ea0'
     green:   '0x9ec49f'

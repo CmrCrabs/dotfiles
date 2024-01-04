@@ -1,7 +1,5 @@
 if status is-interactive
     starship init fish | source &
-    echo " "
-    neofetch
 end
 
 # colours
@@ -19,25 +17,27 @@ set -g fish_greeting
 # export PATH=$PATH:$HOME/.dotnet/tools
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-export BROWSER="firefox"
+export BROWSER="firefox-developer-edition"
 export GTK_THEME="paradise"
 
 
 
 # Abbreviations
 
+abbr -a -g sda 'alacritty &'
 abbr -a -g mpvr 'pkill mpvpaper && ~/.config/.scripts/mpvInit.sh'
-abbr -a -g mainframe_hardline.exe 'hollywood'
+abbr -a -g mainframe_hardline.exe hollywood
 abbr -a -g clcr 'clear && cargo run'
 abbr -a -g screensh 'maim -s -o | xclip -selection clipboard -t image/png -i'
-abbr -a -g nv 'nvim'
-abbr -a -g ls 'lsd'
+abbr -a -g nv nvim
+abbr -a -g ls lsd
 abbr -a -g lsl 'lsd -l'
 abbr -a -g lsla 'lsd -la'
 abbr -a -g spac 'sudo pacman'
-abbr -a -g rgr 'ranger'
+abbr -a -g rgr ranger
 abbr -a -g hx 'helix .'
-abbr -a -g cl 'clear'
+abbr -a -g cl clear
+abbr -a -g cln 'clear && neofetch'
 abbr -a -g cls 'clear && ls'
 abbr -a -g cdl 'cd && clear'
 abbr -a -g cdln 'cd && clear && neofetch'

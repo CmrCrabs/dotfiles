@@ -13,8 +13,13 @@ return {
         "omnisharp",
         "clangd",
         "gopls",
+        "glow",
+        -- "glslls",
         -- "glsl_analyzer",
       },
     },
+  },
+  {
+    "nvim-lspconfig",
   },
 }
