@@ -1,5 +1,7 @@
 # Dotfiles
 
+> **Note:** I have now moved to NixOS so these dots are unmaintained but will probably still work. 
+
 #### Info
 - An archive of all of my various dotfiles
 - Configured for my system, chances are stuff will break

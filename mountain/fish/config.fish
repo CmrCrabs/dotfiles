@@ -18,7 +18,7 @@ set -g fish_greeting
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="firefox-developer-edition"
-export GTK_THEME="paradise"
+# export GTK_THEME="paradise"
 
 
 
@@ -35,8 +35,9 @@ abbr -a -g lsl 'lsd -l'
 abbr -a -g lsla 'lsd -la'
 abbr -a -g spac 'sudo pacman'
 abbr -a -g rgr ranger
+abbr -a -g gonefishing 'feh ~/.config/wallpapers/gone_fishing.jpg'
 abbr -a -g hx 'helix .'
-abbr -a -g cl clear
+abbr -a -g cl 'echo kys'
 abbr -a -g cln 'clear && neofetch'
 abbr -a -g cls 'clear && ls'
 abbr -a -g cdl 'cd && clear'
@@ -52,3 +53,4 @@ abbr -a -g wpi 'sudo warp-svc'
 abbr -a -g wpx 'sudo pkill warp-svc'
 abbr -a -g .wp '~/.config/.wallpapers/'
 abbr -a -g wfpt 'curl https://www.cloudflare.com/cdn-cgi/trace/ && ping gnu.org -c 1'
+abbr -a -g sch 'grim -g $("slurp")'
