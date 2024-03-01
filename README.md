@@ -1,6 +1,8 @@
 # Dotfiles
 
-> **Note:** I have now moved to NixOS so these dots are unmaintained but will probably still work. 
+> **Note:** 
+> I have now moved to NixOS so these dots are unmaintained but will probably still work. 
+> Nixdots: ![NixDots](https://github.com/cmrcrabs/nixdots)
 
 #### Info
 - An archive of all of my various dotfiles
